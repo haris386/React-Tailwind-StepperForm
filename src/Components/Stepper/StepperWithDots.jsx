@@ -47,8 +47,6 @@ export function StepperWithDots() {
             activeStep >= 2 ? "bg-green-600" : "bg-gray-300"
           } h-2 rounded-none`}
         ></div>{" "}
-        {/* Step 3 */}
-        {/* Add more steps as needed */}
       </div>
       {activeStep === 0 && (
         <BudgetComponent onBudgetSelect={handleBudgetSelection} />
@@ -66,8 +64,7 @@ export function StepperWithDots() {
           onReturnHome={handleReturnHome} // Pass the callback function
         />
       )}{" "}
-      {/* Render ProposalComponent for Step 3 */}
-      {/* Add more components for additional steps */}
+      
     </div>
   );
 }
